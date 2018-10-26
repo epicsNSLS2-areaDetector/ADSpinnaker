@@ -26,7 +26,7 @@ USR_CXXFLAGS_Linux += -std=c++11 -Wno-unknown-pragmas
 PROD_IOC_WIN32 += MeasureTemperature
 MeasureTemperature_SRCS += MeasureTemperature.cpp
 
-PROD_IOC_WIN32 += TriggerDelayReadback
+#PROD_IOC_WIN32 += TriggerDelayReadback
 TriggerDelayReadback_SRCS += TriggerDelayReadback.cpp
 
 PROD_IOC_WIN32 += ListFrameRates

@@ -3,6 +3,9 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 
+USR_CXXFLAGS_Linux += -D_LINUX -D_x86
+
+
 PROD_NAME = spinnakerApp
 PROD_IOC_WIN32 += $(PROD_NAME)
 PROD_IOC_Linux += $(PROD_NAME)
@@ -13,6 +16,7 @@ $(PROD_NAME)_DBD += ADSpinnakerSupport.dbd
 
 # <name>_registerRecordDeviceDriver.cpp will be created from <name>.dbd
 $(PROD_NAME)_SRCS += $(PROD_NAME)_registerRecordDeviceDriver.cpp $(PROD_NAME)Main.cpp
+#PROD_SRCS += $(PROD_NAME)_registerRecordDeviceDriver.cpp $(PROD_NAME)Main.cpp
 
 # Add locally compiled object code
 PROD_LIBS += ADSpinnaker
@@ -30,9 +34,9 @@ PROD_SYS_LIBS_Linux += NodeMapData_gcc540_v3_0
 PROD_SYS_LIBS_Linux += MathParser_gcc540_v3_0
 PROD_SYS_LIBS_Linux += XmlParser_gcc540_v3_0
 PROD_SYS_LIBS_Linux += Log_gcc540_v3_0
-PROD_SYS_LIBS_Linux += ptgreyvideoencoder
-PROD_SYS_LIBS_Linux += swscale-ffmpeg
-PROD_SYS_LIBS_Linux += avcodec-ffmpeg
+#PROD_SYS_LIBS_Linux += flycapturevideo
+#PROD_SYS_LIBS_Linux += swscale
+#PROD_SYS_LIBS_Linux += avcodec
 #PROD_SYS_LIBS_Linux += avformat
 #PROD_SYS_LIBS_Linux += avutil
 

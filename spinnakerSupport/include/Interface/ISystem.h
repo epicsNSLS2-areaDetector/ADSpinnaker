@@ -27,8 +27,6 @@
 namespace Spinnaker
 {
     // Forward declaration of implementation class
-    class SystemImpl;
-    class SystemPtr;
     class LoggingEvent;
     /**
     * @defgroup SpinnakerClasses Spinnaker Classes
@@ -63,9 +61,9 @@ namespace Spinnaker
         virtual SpinnakerLogLevel GetLoggingEventPriorityLevel() = 0;
         virtual bool IsInUse() = 0;
         virtual void SendActionCommand(unsigned int deviceKey, unsigned int groupKey, unsigned int groupMask, unsigned long long actionTime = 0, unsigned int* pResultSize = 0, ActionCommandResult results[] = NULL) = 0;
+        virtual const LibraryVersion GetLibraryVersion() = 0;
 
     protected:
-
         ISystem() {};
         ISystem(const ISystem&) {};
         ISystem& operator=(const ISystem&);

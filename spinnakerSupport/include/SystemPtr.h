@@ -41,7 +41,7 @@ namespace Spinnaker
     */
 
     class SPINNAKER_API SystemPtr : public BasePtr<ISystem>
-    {	
+    {
     public:
 
         //! Default constructor 

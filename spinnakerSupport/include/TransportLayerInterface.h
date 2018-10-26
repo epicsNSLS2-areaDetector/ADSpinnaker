@@ -17,8 +17,8 @@
    
 /* Auto-generated file. Do not modify. */
 
-#ifndef PGR_SPINNAKER_TRANSPORTLAYERINTERFACE_H
-#define PGR_SPINNAKER_TRANSPORTLAYERINTERFACE_H
+#ifndef FLIR_SPINNAKER_TRANSPORTLAYERINTERFACE_H
+#define FLIR_SPINNAKER_TRANSPORTLAYERINTERFACE_H
 
 #include "SpinnakerPlatform.h"
 #include "SpinGenApi/SpinnakerGenApi.h"
@@ -236,9 +236,28 @@ namespace Spinnaker
 		 */
 		GenApi::IString &IncompatibleDeviceModelName;
 
+		/**
+		 * Description: Current IP address of the GVCP interface of the selected remote incompatible device.
+		 * Visibility: Expert
+		 */
+		GenApi::IInteger &IncompatibleGevDeviceIPAddress;
+
+		/**
+		 * Description: Current subnet mask of the GVCP interface of the selected remote incompatible device.
+		 * Visibility: Expert
+		 */
+		GenApi::IInteger &IncompatibleGevDeviceSubnetMask;
+
+		/**
+		 * Description: 48-bit MAC address of the GVCP interface of the selected remote incompatible device.
+		 * Visibility: Expert
+		 */
+		GenApi::IInteger &IncompatibleGevDeviceMACAddress;
+
 
 	protected:
 		friend class Interface;
+		friend class IInterface;
 		friend class InterfaceInternal;
 
 	};
@@ -247,4 +266,4 @@ namespace Spinnaker
 	/*@}*/
 
 }
-#endif // PGR_SPINNAKER_TRANSPORTLAYERINTERFACE_H
+#endif // FLIR_SPINNAKER_TRANSPORTLAYERINTERFACE_H

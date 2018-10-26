@@ -20,7 +20,7 @@
 
 #include "SpinnakerPlatform.h"
 #include "BasePtr.h"
-#include "Image.h"
+#include "Interface/IImage.h"
  
 namespace Spinnaker
 {

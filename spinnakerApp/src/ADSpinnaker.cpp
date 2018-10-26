@@ -25,8 +25,10 @@
 #include <epicsString.h>
 #include <epicsExit.h>
 
+
 #include "Spinnaker.h"
 #include "SpinGenApi/SpinnakerGenApi.h"
+
 
 using namespace Spinnaker;
 using namespace Spinnaker::GenApi;
