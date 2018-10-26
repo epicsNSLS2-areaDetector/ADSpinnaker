@@ -3,10 +3,11 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 
-LIBRARY_IOC_WIN32 += ADSpinnaker
-#LIBRARY_IOC_Linux += ADSpinnaker
+#LIBRARY_IOC_WIN32 += ADSpinnaker
+LIBRARY_IOC_Linux += ADSpinnaker
 
-LIB_SRCS_WIN32 += ADSpinnaker.cpp
+#LIB_SRCS_WIN32 += ADSpinnaker.cpp
+LIB_SRCS = ADSpinnaker.cpp
 
 ifeq (debug, $(findstring debug, $(T_A)))
   LIB_LIBS_WIN32 += Spinnakerd_v140
@@ -23,13 +24,13 @@ USR_CXXFLAGS_Linux += -D LINUX
 USR_CXXFLAGS_Linux += -std=c++11 -Wno-unknown-pragmas
 
 #PROD_IOC_Linux += MeasureTemperature
-PROD_IOC_WIN32 += MeasureTemperature
+#PROD_IOC_WIN32 += MeasureTemperature
 MeasureTemperature_SRCS += MeasureTemperature.cpp
 
 #PROD_IOC_WIN32 += TriggerDelayReadback
 TriggerDelayReadback_SRCS += TriggerDelayReadback.cpp
 
-PROD_IOC_WIN32 += ListFrameRates
+#PROD_IOC_WIN32 += ListFrameRates
 ListFrameRate_SRCS += ListFrameRates.cpp
 
 
