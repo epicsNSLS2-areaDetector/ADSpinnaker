@@ -8,7 +8,7 @@ USR_CXXFLAGS_Linux += -D_LINUX -D_x86
 
 PROD_NAME = spinnakerApp
 PROD_IOC_WIN32 += $(PROD_NAME)
-PROD_IOC_Linux += $(PROD_NAME)
+#PROD_IOC_Linux += $(PROD_NAME)
 
 # <name>.dbd will be created from <name>Include.dbd
 DBD += $(PROD_NAME).dbd
