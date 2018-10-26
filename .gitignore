@@ -13,3 +13,11 @@ configure/*.local
 O.*/
 *~
 *.swp
+OLD/
+libflycap*
+*.tar.gz
+spincOld/
+OLD_INCLUDE/
+GUI_OLD/
+Interface_OLD/
+*.txt
