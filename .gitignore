@@ -21,3 +21,4 @@ OLD_INCLUDE/
 GUI_OLD/
 Interface_OLD/
 *.txt
+*-amd64/
