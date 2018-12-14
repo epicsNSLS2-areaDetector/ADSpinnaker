@@ -1596,6 +1596,7 @@ asynStatus ADSpinnaker::setImageParams()
     setSPProperty(ADMinY);
     setSPProperty(ADBinX);
     setSPProperty(ADBinY);
+    setSPProperty(NDDataType);
 
     // We read these back after setting all of them in case one setting affects another
     getSPProperty(SPVideoMode);
@@ -1607,6 +1608,7 @@ asynStatus ADSpinnaker::setImageParams()
     getSPProperty(ADMinY);
     getSPProperty(ADBinX);
     getSPProperty(ADBinY);
+    getSPProperty(NDDataType);
 
     return asynSuccess;
 }

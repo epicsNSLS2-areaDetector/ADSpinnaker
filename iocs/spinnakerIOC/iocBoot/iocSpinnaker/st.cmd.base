@@ -1,7 +1,8 @@
 < envPaths
 
 # Prefix for all records
-epicsEnvSet("PREFIX", "13SP1:")
+#epicsEnvSet("PREFIX", "13SP1:")
+epicsEnvSet("PREFIX", "XF:28IDD-BI{Det-BlackFly}")
 
 # The port name for the detector
 epicsEnvSet("PORT",   "SP1")
