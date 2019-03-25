@@ -10,3 +10,5 @@ These include GigE, 10GigE, and USB 3.0 cameras.
 Additional information:
 * [Documentation](http://cars.uchicago.edu/software/epics/SpinnakerDoc.html).
 * [Release notes and links to source and binary releases](RELEASE.md).
+
+**Driver connects successfully to camera using spinnaker version 1.18, but fails to connect with 1.20**
