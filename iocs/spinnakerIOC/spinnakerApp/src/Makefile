@@ -5,7 +5,7 @@ include $(TOP)/configure/CONFIG
 
 PROD_NAME = spinnakerApp
 PROD_IOC_WIN32 += $(PROD_NAME)
-#PROD_IOC_Linux += $(PROD_NAME)
+PROD_IOC_Linux += $(PROD_NAME)
 
 # <name>.dbd will be created from <name>Include.dbd
 DBD += $(PROD_NAME).dbd
@@ -21,6 +21,9 @@ ifeq (debug, $(findstring debug, $(T_A)))
 else
   PROD_LIBS_WIN32 += Spinnaker_v140
 endif
+
+PROD_LIBS += ADGenICam
+
 # We use PROD_SYS_LIBS even though libflycapture.so is in the ADSpinnaker tree 
 # because we are doing static build but the file is a .so file, not a .a file.
 PROD_SYS_LIBS_Linux += Spinnaker
@@ -30,11 +33,6 @@ PROD_SYS_LIBS_Linux += NodeMapData_gcc540_v3_0
 PROD_SYS_LIBS_Linux += MathParser_gcc540_v3_0
 PROD_SYS_LIBS_Linux += XmlParser_gcc540_v3_0
 PROD_SYS_LIBS_Linux += Log_gcc540_v3_0
-PROD_SYS_LIBS_Linux += ptgreyvideoencoder
-PROD_SYS_LIBS_Linux += swscale-ffmpeg
-PROD_SYS_LIBS_Linux += avcodec-ffmpeg
-#PROD_SYS_LIBS_Linux += avformat
-#PROD_SYS_LIBS_Linux += avutil
 
 include $(ADCORE)/ADApp/commonDriverMakefile
 
